@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="css/input.css" />
+    <script src="https://kit.fontawesome.com/4ba6762e56.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">Pastelería !Que Quesón!</div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pedidos.html">Realiza tu pedido</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="pastelero.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form action="index.html" method="post">
+      <h1>Realiza tu pedido</h1>
+
+      <fieldset>
+        <legend><span class="number">1</span>Información básica</legend>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name" />
+
+        <label for="mail">Telefono:</label>
+        <input type="number" id="tel" name="user_tel" />
+
+        <label for="password">Correo Electrónico:</label>
+        <input type="email" id="email" name="user_email" />
+
+        <label for="bio">Descricpión general del pastel:</label>
+        <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span>Combina los sabores</legend>
+          <label>Sabores Combinados:</label>
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Fresa</label><br />
+          <input
+            type="checkbox"
+            id="design"
+            value="interest_design"
+            name="user_interest"
+          /><label class="light" for="design">Coco</label><br />
+          <input
+            type="checkbox"
+            id="business"
+            value="interest_business"
+            name="user_interest"
+          /><label class="light" for="business">Vainilla</label><br />
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Chocolate</label><br />
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Tres Leches</label><br />
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Chocoflan</label>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span>Combina los adornos</legend>
+          <label>Adornos Combinados:</label>
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Rosas</label><br />
+          <input
+            type="checkbox"
+            id="design"
+            value="interest_design"
+            name="user_interest"
+          /><label class="light" for="design">Corazones</label><br />
+          <input
+            type="checkbox"
+            id="business"
+            value="interest_business"
+            name="user_interest"
+          /><label class="light" for="business">Estrellas</label><br />
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Perlas</label><br />
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Frutas</label
+          ><br />
+          <input
+            type="checkbox"
+            id="development"
+            value="interest_development"
+            name="user_interest"
+          /><label class="light" for="development">Figuras Personalizadas</label>
+        </fieldset>
+      <button type="submit">Pedir</button>
+    </form>
+  </body>
+  <div class="scrol"></div>
+  <script src="./js/menu.js"></script>
+  <footer class="footer">
+    <div class="container">
+        <div class="container-logo">
+            <a href="#"><img class="container-logo__img" src="./images/logo_paste.png" alt="logo"></a>
+        </div>
+        <div class="ubi">
+            <h2>Que horarios manejamos</h2>
+            <p>
+            <table>
+                <tr>
+                    <th>Horarios</th><br><br>
+                </tr>
+                <tr>
+                    <td>Lunes a Viernes de 10 am - 11 pm, Sabados y Domingos 12pm - 5pm</td>
+                </tr>
+            </table>
+            </p>
+        </div>
+        <div class="container-redes">
+            <h2>Redes Sociales</h2>
+
+            <div class="container-redes__social">
+                <a class="links" href="#"><i class="fa-brands fa-facebook-f icon"></i>Facebook</a>
+                <a class="links" href="#"><i class="fa-brands fa-instagram icon"></i>Instagram</a>
+                <a class="links" href="#"><i class="fa-brands fa-twitter icon"></i>Twitter</a>
+                <a class="links" href="#"><i class="fa-brands fa-linkedin icon"></i>Linkedin</a>
+                <a class="links" href="#"><i class="fa-brands fa-youtube icon"></i>YouTube</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="final-container">
+        @Pastelería !Que Quesón! 2022 Derechos de Autor
+    </div>
+</footer>
+</html>

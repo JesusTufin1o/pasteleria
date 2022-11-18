@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almacen</title>
+    <link rel="stylesheet" href="css/admin.css" />
+    <script
+      src="https://kit.fontawesome.com/4ba6762e56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">Pastelería !Que Quesón!</div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pedidos.html">Realiza tu pedido</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="pastelero.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <div class="container">
+    <h2>Bienvenido Pastelero</h2>
+    <p>
+      <br />
+      Aquí tienes un resumen de los pedidos y la cantidad de producto sobrante en tu
+      inventario
+    </p>
+    <br />
+
+    <div class="form-control">
+    <label for="search"><i class="icon-search"></i></label>
+    <input class="table-filter" type="search" data-table="advanced-web-table" placeholder="Buscar...">
+  </div>
+  <!--  Table  -->
+  <div class="table-responsive">
+    <table id="ordering-table" class="advanced-web-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Telefono</th>
+          <th>Correo Electrónico</th>
+          <th>Descripcion general</th>
+          <th>Sabores</th>
+          <th>Adornos</th>
+          <th>Enviado</th>
+          <th>Editar Información</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John</td>
+          <td>5432345678</td>
+          <td>kdjkjskj@dksj.com</td>
+          <td>Pastel tres leches</td>
+          <td>Pastel tres leches</td>
+          <td>Fresas</td>
+          <td>
+            <label class="switch">
+									<input type="checkbox">
+									<div class="slider"></div>
+								</label>
+          </td>
+          <td contenteditable>Click para editar</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Julie</td>
+          <td>7648938276</td>
+          <td>4klsksdjk@s.com</td>
+          <td>Coco con chocolate</td>
+          <td>Coco y Chocolate</td>
+          <td>Perlas</td>
+          <td>
+            <label class="switch">
+									<input type="checkbox" checked>
+									<div class="slider"></div>
+								</label>
+          </td>
+          <td contenteditable>Click para editar</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Frank</td>
+          <td>746352789</td>
+          <td>iujhdhsdh@jkhsdhj.com</td>
+          <td>Vainilla con chocolate</td>
+          <td>vainilla, chocolate</td>
+          <td>figura personalizada</td>
+          <td>
+            <label class="switch">
+									<input type="checkbox" checked>
+									<div class="slider"></div>
+								</label>
+          </td>
+          <td contenteditable>Click para editar</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><br><br><br><br>
+
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Sabores</th>
+      <th>Cantidad</th>
+      <th>Precio por unidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Material" class="mdl-data-table__cell--non-numeric">Fresa</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.90</td>
+    </tr>
+    <tr>
+      <td data-label="Material" class="mdl-data-table__cell--non-numeric">Coco</td>
+      <td data-label="Quantity">50</td>
+      <td data-label="Unit Price">$1.25</td>
+    </tr>
+    <tr>
+      <td data-label="Material" class="mdl-data-table__cell--non-numeric">Vainilla</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+    <td data-label="Material" class="mdl-data-table__cell--non-numeric">Chocolate</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+    <td data-label="Material" class="mdl-data-table__cell--non-numeric">Tres Leches</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+    <td data-label="Material" class="mdl-data-table__cell--non-numeric">Chocoflan</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+  </tbody>
+</table><br><br><br><br>
+
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Adornos</th>
+      <th>Cantidad</th>
+      <th>Precio por unidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Material" class="mdl-data-table__cell--non-numeric">Rosas</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.90</td>
+    </tr>
+    <tr>
+      <td data-label="Material" class="mdl-data-table__cell--non-numeric">Corazones</td>
+      <td data-label="Quantity">50</td>
+      <td data-label="Unit Price">$1.25</td>
+    </tr>
+    <tr>
+      <td data-label="Material" class="mdl-data-table__cell--non-numeric">Estrellas</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+    <td data-label="Material" class="mdl-data-table__cell--non-numeric">Perlas</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+    <td data-label="Material" class="mdl-data-table__cell--non-numeric">Frutas</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+    <td data-label="Material" class="mdl-data-table__cell--non-numeric">Figuras personalizadas</td>
+      <td data-label="Quantity">10</td>
+      <td data-label="Unit Price">$2.35</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><br><br><br>
+
+
+  </body>
+  <script src="js/admin.js"></script>
+</html>

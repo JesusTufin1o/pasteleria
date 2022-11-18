@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}
+
+.nav {
+    background-color: #008B8B;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.nav.active {
+    background: #000;
+    padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active a {
+    color: #fff;
+}
+
+.nav.active a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.scrol {
+    height: 100px;
+}
+
+header {
+    background: url() no-repeat center top;
+    color: #fff;
+    min-height: 150px;
+}
+
+body {
+    color: #666;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-radius: 3px;
+    color: #666;
+    display: table;
+    font-size: 13px;
+    max-width: 100%;
+    overflow-x: auto;
+    position: relative;
+    width: 100%;
+}
+
+table td,
+table th {
+    border-top: 1px solid #eee;
+    display: table-cell;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    border-bottom: 2px solid #eee;
+    vertical-align: middle;
+}
+
+.item-cell {
+    padding: 2px 12px;
+    /* use for cells containing buttons, sliders, etc. */
+}
+
+.form-control {
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+input,
+select,
+textarea {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #666;
+    display: block;
+    font-size: 13px;
+    line-height: 1.25;
+    max-width: 100%;
+    padding: 6px 12px;
+    position: relative;
+    width: 100%;
+}
+
+input::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #40bb93;
+    outline: medium none;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #eee;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.inline input,
+.inline select,
+.inline textarea {
+    display: inline-block;
+    width: auto;
+}
+
+input[type="search"] {
+    border-width: 2px;
+    display: inline-block;
+    padding-left: 2.5em;
+    transition: width 0.4s ease-in-out 0s;
+    width: 150px;
+}
+
+input[type="search"]:focus {
+    width: 60%;
+}
+
+label[for="search"] {
+    bottom: 6px;
+    color: #999;
+    left: 1em;
+    position: absolute;
+    z-index: 1;
+}
+
+[contenteditable]:hover {
+    background-color: #f8f8f8;
+    cursor: cell;
+}
+
+[contenteditable]:focus {
+    background-color: #f8f8f8;
+}
+
+.switch {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 3.5em;
+}
+
+.switch input {
+    display: none;
+    margin: 0;
+}
+
+.slider {
+    background-color: #ccc;
+    border-radius: 1em;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.slider::before {
+    background-color: white;
+    border-radius: 0.7em;
+    bottom: 4px;
+    content: "";
+    height: 1.4em;
+    left: 4px;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 1.4em;
+}
+
+input:checked+.slider {
+    background-color: #40bb93;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(1.5em);
+    -ms-transform: translateX(1.5em);
+    transform: translateX(1.5em);
+}

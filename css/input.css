@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}
+.nav {
+    background-color: #008B8B;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.nav.active {
+    background: #000;
+    padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active a {
+    color: #fff;
+}
+
+.nav.active a:hover {
+    background: #fff;
+    color: #000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.scrol {
+    height: 100px;
+}
+header {
+    background: url() no-repeat center top;
+    color: #fff;
+    min-height: 150px;
+}
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+    form {
+        max-width: 480px;
+    }
+
+}
+
+.footer {
+    background-color: #212f3d;
+    width: 100%;
+    padding: 1em;
+    align-self: flex-end;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-logo__img {
+    width: 100px;
+}
+
+.ubi h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.ubi table {
+    color: #fff;
+    font-size: .8rem;
+}
+
+.ubi p {
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.container-redes h2 {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.links {
+    color: #fff;
+    display: flex;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 25px;
+    background-color: #1b2631;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.icon:hover {
+    background-color: #5d6d7d;
+}
+
+.final-container {
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+    font-family: 'Poppins';
+}
